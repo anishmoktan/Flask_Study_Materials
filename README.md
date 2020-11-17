@@ -47,3 +47,7 @@
 - When creating a Flask object, we need to pass in the name of the application. In this case, because we are working with a single module, we can use the special Python variable, __name__.
 - The value of __name__ depends on how the Python script is executed. If we run a Python script directly, such as with python app.py in the terminal, then __name__ is equal to the string '__main__'. On the other hand, if the script is being imported as a module into another Python script, then __name__ would be equal to its filename.
 - this distinction can be useful when we have code that we want to be run only if the script is executed a particular way.
+
+## Routing
+- Each time we visit a URL in a browser, it makes a request to the web server, which processes the request and returns a response back to the browser. In our Flask app, we can create endpoints to handle the various requests. Requests from different URLs can be directed to different endpoints in a process called routing.
+- To build a route, we need to first define a function, known as a view function, that contains the code for processing the request and generating a response. The response could be something as simple as a string of text. Then, we can use the route() decorator to bind a URL to the view function such that the function will be triggered when the URL is visited:
