@@ -16,8 +16,8 @@
 ## Running Flask App
 - A Flask app can be run by exporting the FLASK_APP environment variable and running flask run in the terminal.
 
-  $ export FLASK_APP=app.py
-  $ flask run
+ " $ export FLASK_APP=app.py
+   $ flask run "
 
 ## Creating a Route
 - Routes in a Flask app can be created by defining a view function and associating a URL with it using the route() decorator. Routes specify how the Flask app handles requests it receives, such as what to display on the webpage at a certain URL.
